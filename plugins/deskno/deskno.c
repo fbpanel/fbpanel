@@ -53,7 +53,7 @@ scrolled(GtkWidget *widget, GdkEventScroll *event, deskno_priv *dc)
 static gint
 name_update(GtkWidget *widget, deskno_priv *dc)
 {
-    char buffer [15];
+    char buffer [19];
 
     ENTER;
     dc->deskno = get_net_current_desktop();
