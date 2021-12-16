@@ -148,15 +148,42 @@ Plugin {
         }
         separator {
         }
-	menu {  
-	    name = Computer
-	    icon = computer
-            
-	    item {
-		name = Terminal
-		icon = terminal
-		action = x-terminal
-	    }
+        menu {
+            name = Notes
+            icon = accessories-text-editor
+            # list directory content
+            dir {
+                # path to directory to list
+                path = ~/NOTES
+                # icon for files
+                icon = ascii
+                # icon for subdirs
+                subdiricon = folder
+                # app used to open files
+                action = xdg-open
+                # process .desktop files
+                UseDesktopFiles = true
+                # app used for URL from .desktop files
+                URLaction = x-file-manager
+                # app used for edit (from right click dialog)
+                EDITaction = xdg-open
+            }
+            separator {
+            }
+            item {
+                name = Rebuild menu
+                icon = refresh
+                rebuildmenu =
+            }
+        }
+        menu {
+            name = Computer
+            icon = computer
+            item {
+                name = Terminal
+                icon = terminal
+                action = x-terminal
+            }
             item {
                 name = Lock Display
                 icon = gnome-lockscreen
