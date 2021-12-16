@@ -153,19 +153,19 @@ Plugin {
             # list directory content
             dir {
                 # path to directory to list
-                path = ~/NOTATKI
+                path = ~/NOTES
                 # icon for files
                 icon = ascii
                 # icon for subdirs
                 subdiricon = folder
                 # app used to open files
-                action = kate
+                action = gnome-emacs
                 # process .desktop files
                 UseDesktopFiles = true
                 # app used for URL from .desktop files
-                URLaction = konqueror
+                URLaction = x-file-manager
                 # app used for edit (from right click dialog)
-                EDITaction = kate
+                EDITaction = gnome-emacs
             }
             separator {
             }
