@@ -82,6 +82,7 @@
 # First parameter is 'type'. It's mandatory and must come first
 # Legal values are plugin names. Names of builtin plugins are:
 # separator   - visual separator
+# vbox        - put sub-elements (other plugins) vertically
 # wincmd      - 'show desktop' button
 # taskbar     - lists all opened windows (tasks)
 # launchbar   - bar with launch button
@@ -263,7 +264,21 @@ Plugin {
 Plugin {
     type = pager
     config {
+        # show wallpaper background in pager
         showwallpaper = true
+
+        # show icons on windows in pager
+        ShowIcon = true
+        IconSize = 24
+        IconMinSize = 8
+
+        # show desktop names in pager
+        ShowNamesInPager = true
+        ShowNamesInTooltip = true
+        NamesHeight = 12
+        NamesFmt = <span color="black" font="7">%s</span>
+        NamesBackgroundNormal = #cccccc
+        NamesBackgroundActive = #808080
     }
 }
 
@@ -340,6 +355,16 @@ Plugin {
         HoursView = 24
         TooltipFmt = %A %x
         #Action = xmessage Please define some command &
+        ShowCalendar = true
+        # clock support multiple timezones/locale setting - switch via mouse sroll
+        # set number of config sets
+        ZoneNum = 2
+        # set first config set
+        TimeZone0 = Europe/Warsaw
+        Locale0 = pl_PL.UTF-8
+        # set next config set
+        TimeZone1 = UTC
+        Locale1 = C.UTF-8
     }
 }
 
