@@ -1,0 +1,6 @@
+I'd like to thank GNOME project. I learn a lot from its code and some pieces were used in fbpanel. Correct for version 3.0, systray code and wm icon code were copied from GNOME
+
+Credits and lot of thanks to Peter Zelezny <zed@linuxpower.org> an author of fspanel (see http://www.chatjunkies.org/fspanel/ or http://freshmeat.net/projects/fspanel/). The first version of fBpanel was started as hacking around fSpanel :-)
+
+Nice battery icons for battery meter plugin were taken from http://rocketdock.com/addon/docklets/9523
+
