@@ -111,7 +111,8 @@ override Q :=
 else
 override Q := @
 MAKEFLAGS += --no-print-directory
-out := 2>/dev/null 1>/dev/null
+#out := 2>/dev/null 1>/dev/null
+out := 
 endif
 summary = @echo " $(1)" $(subst $(STARTDIR)/,,$(CURDIR)/)$(2)
 summary2 = @printf " %-5s %s\n" "$(1)" "$(2)"
