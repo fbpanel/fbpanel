@@ -18,6 +18,7 @@
 #include "dbg.h"
 extern panel *the_panel;
 
+struct _plugin_instance *stam;
 
 /**************************************************************/
 static GHashTable *class_ht;
