@@ -159,13 +159,13 @@ Plugin {
                 # icon for subdirs
                 subdiricon = folder
                 # app used to open files
-                action = xdg-utils
+                action = xdg-open
                 # process .desktop files
                 UseDesktopFiles = true
                 # app used for URL from .desktop files
                 URLaction = x-file-manager
                 # app used for edit (from right click dialog)
-                EDITaction = xdg-utils
+                EDITaction = xdg-open
             }
             separator {
             }
