@@ -34,8 +34,6 @@
 #include <glib.h>
 #include <glib-object.h>
 
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations" // FIXME: temporary solution, we need update this code
-
 //#define DEBUGPRN
 #include "dbg.h"
 
