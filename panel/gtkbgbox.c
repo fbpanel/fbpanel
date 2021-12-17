@@ -34,7 +34,6 @@
 #include <glib.h>
 #include <glib-object.h>
 
-
 //#define DEBUGPRN
 #include "dbg.h"
 
